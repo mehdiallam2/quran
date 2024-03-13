@@ -1,4 +1,4 @@
-export interface Surah {
+export interface SurahType {
   verses: Verse[];
   meta: Meta;
 }

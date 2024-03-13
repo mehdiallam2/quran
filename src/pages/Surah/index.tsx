@@ -1,13 +1,13 @@
-import { Surah, Verse } from "@src/types/surah";
+import { SurahType, Verse } from "@src/types/surah";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import Header from "@src/components/Header";
 
 function Surah() {
   const params = useParams();
-  const [surah, setSurah] = useState<Surah>();
+  const [surah, setSurah] = useState<SurahType>();
 
   async function getSurah() {
     try {
