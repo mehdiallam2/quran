@@ -1,0 +1,58 @@
+.surahCard2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: solid 1px rgb(70, 75, 80);
+  transition: all 400ms ease;
+}
+
+.surahCard2:hover {
+  border-color: var(--primary);
+}
+
+.surahCard2-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.surahCard2-top-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.surahCard2-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: rgb(52, 58, 64);
+  height: 6rem;
+}
+
+.surahCard2-names,
+.surahCard2-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.surahCard2-right {
+  text-align: end;
+}
+
+.surahCard2-englishName {
+  font-weight: bold;
+  color: #777777;
+}
+
+.surahCard2-simpleName {
+  margin-top: 0.625rem;
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 0.1736)), 1.125rem);
+  font-weight: bold;
+}
+
+.surahCard2-surahId {
+  font-weight: bold;
+}

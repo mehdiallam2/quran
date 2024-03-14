@@ -14,5 +14,5 @@ export interface Meta {
 }
 
 export interface Filters {
-  chapter_number: string;
+  chapter_number: number;
 }

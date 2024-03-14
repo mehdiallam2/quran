@@ -1,10 +1,29 @@
 import { Chapter } from "@src/types/chapter";
 import { Link } from "react-router-dom";
 import "./index.css";
+import { useContext } from "react";
+import { RecentlyReadContext } from "@src/context/RecentlyReadContext";
 
 function SurahCard({ surah }: { surah: Chapter }) {
+  // const recentlyReadSurahs = useContext(RecentlyReadContext);
+
+  const { recentlyRead, setRecentlyRead } = useContext(RecentlyReadContext)!;
+
+  function addTorecentlyRead() {
+    const check = recentlyRead.some(
+      (recentlyReadSurah) => recentlyReadSurah.id === surah.id,
+    );
+    if (!check) {
+      // recentlyReadSurahs.push(surah);
+      setRecentlyRead([...recentlyRead, surah]);
+    }
+  }
   return (
-    <Link className="surahCard" to={`/surah/${surah.id}`}>
+    <Link
+      className="surahCard"
+      onClick={addTorecentlyRead}
+      to={`/surah/${surah.id}`}
+    >
       <div className="surahCard-left">
         <div className="surahCard-numberShape">
           <span className="surahCard-number">{surah.id}</span>

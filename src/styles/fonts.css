@@ -1,7 +1,14 @@
 @font-face {
   font-family: "AyatQuran";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
   src: url(../assets/fonts/AyatQuran/AyatQuran1-5y1Rj.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "AyatQuran";
+  src: url(../assets/fonts/AyatQuran/AyatQuran2-8OM6D.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "AyatQuran";
+  src: url(../assets/fonts/AyatQuran/AyatQuran3-1jGzg.ttf) format("ttf");
 }

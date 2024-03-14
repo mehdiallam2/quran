@@ -4,8 +4,8 @@
   align-items: center;
   padding: 1rem 1.1875rem;
   border-radius: 0.25rem;
-  border: solid 1.5px #f4f5f6;
-  /* transition: all 400ms ease; */
+  border: solid 1px rgb(70, 75, 80);
+  transition: all 400ms ease;
 }
 
 .surahCard:hover {
@@ -36,9 +36,9 @@
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background-color: #f4f5f6;
+  background-color: #343a40;
   rotate: 45deg;
-  /* transition: all 400ms ease; */
+  transition: all 400ms ease;
 }
 
 .surahCard-number {
@@ -62,8 +62,10 @@
 
 .surahCard-englishName {
   font-weight: bold;
-  color: #f4f5f6;
+  color: rgb(119, 119, 119);
 }
 
-.surahCard-arabicName {
+.surahCard-versesCount {
+  color: rgb(119, 119, 119);
+  font-weight: bold;
 }

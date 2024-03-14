@@ -8,17 +8,25 @@ function SurahGrid() {
   const [surahs, setSurahs] = useState<Chapter[]>([]);
 
   async function getSurahs() {
-    try {
-      const response = await axios.get("https://api.quran.com/api/v4/chapters");
-      setSurahs(response.data.chapters);
-    } catch (error) {
-      console.log(error);
+    const storedSurahs = localStorage.getItem("surahs");
+    if (storedSurahs) {
+      setSurahs(JSON.parse(storedSurahs));
+    } else {
+      try {
+        const response = await axios.get(
+          "https://api.quran.com/api/v4/chapters",
+        );
+        setSurahs(response.data.chapters);
+        localStorage.setItem("surahs", JSON.stringify(response.data.chapters));
+      } catch (error) {
+        console.log(error);
+      }
     }
   }
 
   useEffect(() => {
     getSurahs();
-  });
+  }, []);
 
   return (
     <section className="surahGrid">

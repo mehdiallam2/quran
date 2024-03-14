@@ -1,27 +1,28 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import { useEffect, useState } from "react";
 
 function Header() {
-  const [position, setPosition] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
-  useEffect(() => {
-    const handleScroll = () => {
-      const moving = window.pageYOffset;
+  const [lastPosition, setLastPosition] = useState(window.scrollY);
 
-      setVisible(position > moving);
-      setPosition(moving);
-    };
+  useEffect(() => {
+    function handleScroll() {
+      const currentPosition = window.scrollY;
+      // Hide Header if we are scrolling back
+      setVisible(lastPosition > currentPosition || lastPosition < 1);
+      setLastPosition(currentPosition);
+    }
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
 
-  const cls = visible ? "visible" : "hidden";
   return (
-    <header className={`header ${cls}`}>
-      <nav className="header-container container">
+    <header className={`header ${visible ? "visible" : "hidden"}`}>
+      <nav className="header-container">
         <Link className="header-logo" to={"/"}>
           Quran
         </Link>

@@ -1,5 +1,6 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
+import React from "react";
+import RecentlyReadProvider from "./context/RecentlyReadContext";
 import { HashRouter } from "react-router-dom";
 import App from "./App.tsx";
 import "@styles/reset.css";
@@ -8,8 +9,10 @@ import "@styles/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <RecentlyReadProvider>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </RecentlyReadProvider>
   </React.StrictMode>,
 );
