@@ -5,3 +5,14 @@
   text-align: center;
   color: white;
 }
+
+.ramadanMubarakk-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.ramadanMubarakk-image {
+  width: 1.5rem;
+}

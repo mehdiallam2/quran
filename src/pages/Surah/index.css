@@ -1,4 +1,17 @@
+.surah {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.surah-container {
+  display: grid;
+  align-content: center;
+}
+
 .surah-surah {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+
   max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
@@ -7,9 +20,9 @@
 }
 
 .surah-verseNumber {
-  border: solid 1px var(--black);
+  border: var(--border-style) var(--border-width) var(--border-color);
   border-radius: 50%;
-  padding: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }

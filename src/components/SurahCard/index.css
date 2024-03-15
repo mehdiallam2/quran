@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1rem 1.1875rem;
   border-radius: 0.25rem;
-  border: solid 1px rgb(70, 75, 80);
+  border: var(--border-style) var(--border-width) var(--border-color);
   transition: all 400ms ease;
 }
 
@@ -36,7 +36,7 @@
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background-color: #343a40;
+  background-color: var(--highlight-bg);
   rotate: 45deg;
   transition: all 400ms ease;
 }

@@ -1,14 +1,6 @@
 @font-face {
-  font-family: "AyatQuran";
-  src: url(../assets/fonts/AyatQuran/AyatQuran1-5y1Rj.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: "AyatQuran";
-  src: url(../assets/fonts/AyatQuran/AyatQuran2-8OM6D.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: "AyatQuran";
-  src: url(../assets/fonts/AyatQuran/AyatQuran3-1jGzg.ttf) format("ttf");
+  font-family: "Uthmanic";
+  font-style: regular;
+  font-weight: normal;
+  src: url(../assets/fonts/UthmanicScriptHAFSRegular.otf) format("otf");
 }
