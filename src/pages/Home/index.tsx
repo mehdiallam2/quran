@@ -7,13 +7,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "redux/store";
 import { clear } from "redux/slices/recentlyReadSlice";
 import JuzGrid from "@components/JuzGrid";
-import { useState } from "react";
 
 function Home() {
   const recentlyRead = useSelector((state: RootState) => state.recentlyReadReducer);
   const dispatch = useDispatch();
-
-  const [activeTab, setActiveTab] = useState(1);
 
   return (
     <>
@@ -25,7 +22,9 @@ function Home() {
           <div className={styles.options}></div>
         </div>
         <SurahsGrid />
+        <hr />
         <JuzGrid />
+        <hr />
         <SurahsGrid sorted={true} />
       </div>
       <Footer />

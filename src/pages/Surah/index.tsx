@@ -3,13 +3,13 @@ import styles from "./index.module.css";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import { useEffect, useState } from "react";
-import { Surah } from "types/surah";
+import { SurahType } from "types/surah";
 import axios from "axios";
 
 function Surah() {
   const params = useParams();
 
-  const [surah, setSurah] = useState<Surah | null>(null);
+  const [surah, setSurah] = useState<SurahType | null>(null);
 
   async function getSurah() {
     try {
