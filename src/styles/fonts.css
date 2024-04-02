@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Kitab";
+  src: url("https://cdn.alquran.cloud/public/fonts/Kitab-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Kitab Bold";
+  src: url("https://cdn.alquran.cloud/public/fonts/Kitab-Bold.ttf");
+}

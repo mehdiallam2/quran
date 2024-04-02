@@ -1,0 +1,64 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+
+  --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  --font-quran: "Kitab", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-bracket: "Simplified Arabic", "Traditional Arabic", "Simplified Arabic Fixed", KacstOne,
+    "XP Vosta", Harmatta, "Iranian Sans", "Arabic Typesetting", Scheherazade, Lateef,
+    "Droid Arabic Naskh", "Noto Naskh Arabic";
+
+  --body-font-family: var(--font-sans-serif);
+  --body-font-size: 1rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-text-align: start;
+
+  --heading-font-family: "Chakra Petch", var(--font-sans-serif);
+  --heading-font-size: 1rem;
+  --heading-font-weight: 500;
+  --heading-line-height: 1.2;
+
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #dee2e6;
+  --border-color-translucent: rgba(0, 0, 0, 0.175);
+
+  --border-radius: 0.375rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 1rem;
+  --border-radius-xxl: 2rem;
+  --border-radius-2xl: var(--border-radius-xxl);
+  --border-radius-pill: 50rem;
+
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.surah-bracket-sign {
+  font-family: "Simplified Arabic", "Traditional Arabic", "Simplified Arabic Fixed", KacstOne,
+    "XP Vosta", Harmatta, "Iranian Sans", "Arabic Typesetting", Scheherazade, Lateef,
+    "Droid Arabic Naskh", "Noto Naskh Arabic";
+  font-size: 125%;
+}

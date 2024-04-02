@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: var(--border-style) var(--border-width) var(--border-color);
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  border-color: var(--primary);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--primary-bg);
+  height: 6rem;
+}
+
+.names,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  text-align: end;
+}
+
+.englishTranslatedName {
+  font-weight: bold;
+  color: #777777;
+}
+
+.englishName {
+  margin-top: 0.625rem;
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 0.1736)), 1.125rem);
+  font-weight: bold;
+}
+
+.surahNumber {
+  font-weight: bold;
+}

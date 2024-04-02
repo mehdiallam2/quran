@@ -1,0 +1,101 @@
+[data-theme="light"] {
+  --body-color: #212529;
+  --body-bg: #ffffff;
+
+  --body-color-rgb: 255, 255, 255;
+  --body-bg-rgb: 9, 9, 11;
+
+  --primary: #fa7070;
+  --primary-light: hsl(from var(--primary) h s calc(l + 7%));
+  --primary-dark: hsl(from var(--primary) h s calc(l - 7%));
+
+  --secondary: #cf2de1;
+  --secondary-light: hsl(294, 75%, 62%);
+  --secondary-dark: hsl(294, 75%, 42%);
+
+  --tertiary: #e6611f;
+  --tertiary-light: #e6611f;
+  --tertiary-dark: #e6611f;
+
+  --primary-bg: #f4f5f6;
+  --primary-bg-light: #908be3;
+  --primary-bg-dark: #908be3;
+
+  --secondary-bg: #e089e9;
+  --secondary-bg-light: #e089e9;
+  --secondary-bg-dark: #e089e9;
+
+  --tertiary-bg: #e4a382;
+  --tertiary-bg-light: #e4a382;
+  --tertiary-bg-dark: #e4a382;
+
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #212529;
+
+  --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  --heading-color: inherit;
+
+  --selection-color: #000000;
+  --selection-bg: #ffffff;
+
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #c6c9cc;
+  --border-color-translucent: rgba(0, 0, 0, 0.175);
+}
+
+[data-theme="dark"] {
+  --body-color: #ffffff;
+  --body-bg: #09090b;
+
+  --body-color-rgb: 255, 255, 255;
+  --body-bg-rgb: 9, 9, 11;
+
+  --primary: #5450a8;
+  --primary-light: hsl(from var(--primary) h s calc(l + 7%));
+  --primary-dark: hsl(from var(--primary) h s calc(l - 7%));
+
+  --secondary: #cf2de1;
+  --secondary-light: hsl(294, 75%, 62%);
+  --secondary-dark: hsl(294, 75%, 42%);
+
+  --tertiary: #e6611f;
+  --tertiary-light: #e6611f;
+  --tertiary-dark: #e6611f;
+
+  --primary-bg: #343537;
+  --primary-bg-light: #464b50;
+  --primary-bg-dark: #464b50;
+
+  --secondary-bg: #e089e9;
+  --secondary-bg-light: #e089e9;
+  --secondary-bg-dark: #e089e9;
+
+  --tertiary-bg: #e4a382;
+  --tertiary-bg-light: #e4a382;
+  --tertiary-bg-dark: #e4a382;
+
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #212529;
+
+  --gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  --heading-color: inherit;
+
+  --selection-color: #000000;
+  --selection-bg: #ffffff;
+
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #27272a;
+  --border-color-translucent: rgba(0, 0, 0, 0.175);
+}

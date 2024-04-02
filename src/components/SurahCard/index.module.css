@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.1875rem;
+  border-radius: 0.25rem;
+  border: var(--border-style) var(--border-width) var(--border-color);
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  border-color: var(--primary);
+}
+
+.card:hover .shape {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.card:hover .ayahsCount {
+  color: var(--primary);
+}
+
+.card:hover .translatedName {
+  color: var(--primary);
+}
+
+.left {
+  display: flex;
+  gap: 1.1875rem;
+}
+
+.shape {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-bg);
+  rotate: 45deg;
+  transition: all 400ms ease;
+}
+
+.number {
+  rotate: -45deg;
+  font-weight: bold;
+}
+
+.names,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.right {
+  text-align: end;
+}
+
+.simpleName {
+  font-weight: bold;
+}
+
+.translatedName {
+  font-weight: bold;
+  color: var(--gray-500);
+}
+
+.arabicName {
+  font-family: var(--font-quran);
+}
+
+.ayahsCount {
+  color: var(--gray-500);
+  font-weight: bold;
+}
